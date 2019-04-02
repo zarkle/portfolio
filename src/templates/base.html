@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="">Resume</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    <a href="https://www.linkedin.com/in/beverly-pham/" title="LinkedIn" target="_blank">LinkedIn</a>
+    <a href="https://github.com/zarkle" title="GitHub" target="_blank">Githb</a>
+  </footer>
+</body>
+</html>
